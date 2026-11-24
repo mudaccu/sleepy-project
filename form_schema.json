@@ -1,0 +1,74 @@
+{
+  "model": "Random Forest",
+  "target": "Sleep_Quality (1-10)",
+  "test_mae": 2.85,
+  "inputs": {
+    "Age": {
+      "type": "number",
+      "min": 18,
+      "max": 25,
+      "default": 21,
+      "step": 1,
+      "label": "Age"
+    },
+    "Gender": {
+      "type": "choice",
+      "options": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "label": "Gender"
+    },
+    "University_Year": {
+      "type": "choice",
+      "options": [
+        "1st Year",
+        "2nd Year",
+        "3rd Year",
+        "4th Year"
+      ],
+      "label": "University year"
+    },
+    "Study_Hours": {
+      "type": "number",
+      "min": 0,
+      "max": 12,
+      "default": 6,
+      "step": 0.5,
+      "label": "Study hours per day"
+    },
+    "Screen_Time": {
+      "type": "number",
+      "min": 1,
+      "max": 4,
+      "default": 2.5,
+      "step": 0.1,
+      "label": "Screen time (hours per day)"
+    },
+    "Caffeine_Intake": {
+      "type": "number",
+      "min": 0,
+      "max": 5,
+      "default": 2,
+      "step": 1,
+      "label": "Caffeine drinks per day"
+    },
+    "Physical_Activity": {
+      "type": "number",
+      "min": 0,
+      "max": 120,
+      "default": 60,
+      "step": 5,
+      "label": "Exercise (minutes per day)"
+    },
+    "Weekday_Sleep_Start": {
+      "type": "number",
+      "min": 0.0,
+      "max": 23.5,
+      "default": 23.0,
+      "step": 0.5,
+      "label": "Bedtime (24-hour clock, e.g. 23 = 11 pm)"
+    }
+  }
+}
